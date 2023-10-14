@@ -75,3 +75,23 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Style the scrollbar track */
+::-webkit-scrollbar {
+  width: 12px;
+
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #F18404;
+  /* Change the thumb color */
+  border-radius: 6px;
+  /* Add rounded corners to the thumb */
+}
+
+/* Style the scrollbar track on hover */
+::-webkit-scrollbar-track:hover {
+  background-color: #f0f0f0;
+  /* Change the track color on hover */
+}
