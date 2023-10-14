@@ -27,18 +27,19 @@ export default function Home() {
     </div>
      </section>
 
-      <section className='bg-[#F5F5F5] px-16 lg:px-20 py-10'>
+      <section className='bg-[#F5F5F5] px-10 lg:px-20 py-10'>
         <div className='font-raleway text-center'>
           <h1 className='text-primaryy font-semibold text-lg pt-5'>What We Do</h1>
-          <h1 className='w-[250px] font-raleway m-auto text-3xl lg:text-5xl font-semibold lg:w-[600px] lg:leading-[60px]'>We are here to help the helpless</h1>
+          <h1 className=' font-raleway m-auto text-3xl lg:text-5xl font-semibold lg:w-[600px] lg:leading-[60px]'>We are here to help the helpless</h1>
         </div>
+       
         <div className='w-full flex flex-col gap-5 lg:flex-row justify-center lg:gap-14 mt-10'>
            {
             aims.map((aim,index)=>(
               <div className='lg:w-[240px] text-center flex flex-col gap-4'key={index}>
                 <p className="text-primaryy m-auto text-4xl" >{aim.icon}</p>  
                 <h1 className='lg:text-2xl font-semibold text-gray-800'>{aim.title}</h1>
-                <p className='w-[240px] m-auto font-poppins text-sm leading-relaxed text-gray-400'>{aim.text}</p>
+                <p className='w-auto m-auto font-poppins text-sm leading-relaxed text-gray-400'>{aim.text}</p>
               </div>
             ))
            }
@@ -48,9 +49,9 @@ export default function Home() {
 
       <section className='container'>
 
-        <div className='grid lg:grid-cols-2 gap-10 lg:px-20 lg:gap-1 h-auto py-10'>
+        <div className='grid xl:grid-cols-2 gap-10 xl:px-20 xl:gap-1 h-auto py-10'>
 
-          <div className='text-center lg:text-left font-raleway lg:w-[90%] flex flex-col justify-center items-center lg:justify-start lg:items-start m-auto'>
+          <div className='text-center xl:text-left font-raleway xl:w-[90%] flex flex-col justify-center items-center xl:justify-start xl:items-start m-auto'>
             <h1 className='text-primaryy font-semibold text-lg pt-10 '>Who Are We</h1>
             <h1 className='text-3xl font-raleway lg:text-5xl font-semibold lg:leading-[60px]'>A Little About Us</h1>
             <p className='font-poppins text-sm leading-loose text-gray-500 lg:w-[500px] my-5'>Lorem ipsum dolor sit amet consectetur. Lacus vitae nibh diam eu lectus sit viverra. 
@@ -73,7 +74,7 @@ export default function Home() {
         
         <div className='font-raleway text-center'>
           <h1 className='text-primaryy font-semibold text-lg pt-5'>What We Do</h1>
-          <h1 className='w-[250px] font-raleway m-auto text-3xl lg:text-5xl font-semibold lg:w-[600px] lg:leading-[60px]'>Latest Cause</h1>
+          <h1 className=' font-raleway m-auto text-3xl lg:text-5xl font-semibold lg:w-[600px] lg:leading-[60px]'>Latest Cause</h1>
         </div>
         <div className="flex flex-col gap-20 lg:flex-row lg:justify-between lg:bg-[url('/assets/shade.png')] bg-cover bg-no-repeat h-auto">
             {
@@ -95,10 +96,10 @@ export default function Home() {
         <div className='lg:px-24 py-16 px-10 container '>
         <div className='font-raleway text-center'>
           <h1 className='text-primaryy font-semibold text-lg pt-5'>What We Do</h1>
-          <h1 className='w-[250px] font-raleway m-auto text-3xl lg:text-5xl font-semibold lg:w-[600px] lg:leading-[60px]'>UpComing Events</h1>
+          <h1 className='font-raleway m-auto text-3xl lg:text-5xl font-semibold lg:w-[600px] lg:leading-[60px]'>UpComing Events</h1>
         </div>
 
-        <div className='flex justify-between'>
+        <div className=' flex flex-col gap-5 2xl:flex-row justify-between'>
 
           <div className='flex flex-col gap-5 mt-7'>
             <Eventcard />
@@ -107,9 +108,9 @@ export default function Home() {
            
           </div>
 
-            <div className='flex flex-col justify-center w-[28%]  bg-[url("/assets/volunteer.png")] bg-cover bg-no-repeat  py-16 px-10 '>
-              <h1 className='text-5xl font-raleway font-semibold gap-4 text-primaryy backdrop-blur-sm'>Volunteer<span className='text-5xl text-white '><br></br> To Help</span></h1>
-              <p className='font-poppins text-sm leading-loose text-white  my-5'>Lorem ipsum dolor sit amet consectetur. Lacus vitae nibh diam eu lectus sit viverra.
+            <div className='flex flex-col justify-center md:items-center 2xl:w-[28%]  bg-[url("/assets/volunteer.png")] bg-cover bg-no-repeat  py-16 px-3 lg:px-10 '>
+              <h1 className='text-4xl lg:text-5xl font-raleway font-semibold gap-4 text-primaryy backdrop-blur-sm'>Volunteer<span className='text-3xl lg:text-5xl text-white '><br></br> To Help</span></h1>
+              <p className='font-poppins text-sm leading-loose text-gray-300  my-5'>Lorem ipsum dolor sit amet consectetur. Lacus vitae nibh diam eu lectus sit viverra.
               </p>
           <Button title='Volunteer Now' />
           </div>
@@ -119,6 +120,9 @@ export default function Home() {
         </div>
         </div>
     </section>
+    
+
+
    </main>
   )
 }

@@ -16,7 +16,7 @@ const Card = ({image,title,text}:ICard) => {
             <img src={image} />
         </div>
           <div className='flex flex-col lg:gap-3 pt-4 justify-center items-center gap-5 text-center m-auto lg:items-start lg:text-left'>
-              <h1 className='lg:text-2xl font-semibold text-black'>{title}</h1>
+              <h1 className='text-xl lg:text-2xl font-semibold text-black'>{title}</h1>
               <p className='font-poppins text-sm leading-loose text-gray-500 '>{text} </p>
 
                  <Button title="Donate Now" />
