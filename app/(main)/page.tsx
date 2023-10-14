@@ -139,14 +139,14 @@ export default function Home() {
         </div>
     </section>
 
-      <section className='bg-[url("/assets/proof.png")] bg-cover bg-no-repeat bg-fixed blur-none h-[200px]'>
-        <div className='lg:px-24 py-16 px-10 container bg-[url("/assets/proof.png)] bg-cover bg-no-repeat flex gap-28 justify-center'>
+      <section className='bg-[url("/assets/proof.png")] bg-cover bg-no-repeat bg-fixed blur-none lg:h-[200px]'>
+        <div className='lg:px-24 py-16 px-10 container bg-[url("/assets/proof.png)] bg-cover bg-no-repeat flex flex-col gap-10 lg:flex-row lg:gap-28 justify-center'>
   
 
                     {
                       proof.map((item, index)=>(
                         <div key={index}>
-                        <h1 className='font-raleway text-6xl font-semibold text-white'>{item.number}</h1>
+                        <h1 className='font-raleway text-6xl font-semibold text-white text-center'>{item.number}</h1>
                         <h1 className='font-poopins text-gray-400 font-medium text-center'>{item.title}</h1>
                         </div>
                       ))
@@ -156,6 +156,8 @@ export default function Home() {
         </div>
 
     </section>
+
+    
 
 
    </main>
