@@ -5,7 +5,7 @@ import { TfiLocationPin } from "react-icons/tfi"
 
 const Eventcard = () => {
   return (
-    <div className='bg-white w-auto shadow-lg h-auto flex flex-row gap-5 py-5 px-5 rounded-xl'>
+    <div className='bg-white w-[70%] shadow-lg h-auto gap-5 py-5 px-7 rounded-xl flex m-0 p-0'>
           
         <div className='flex flex-col gap-10'>
             <h1 className='flex flex-col text-6xl text-center font-raleway font-semibold gap-4'>14<span className='text-lg text-gray-500'>December</span></h1>
@@ -16,11 +16,11 @@ const Eventcard = () => {
                 <p className='flex flex-col text-sm font-poppins text-center text-gray-400'>45<span>Seconds</span></p>
             </div>
         </div>
-        <div className=''>
-              <h1 className='text-3xl font-semibold '>Donating Clothes to Orphanages</h1>
+        <div className='w-[200px]'>
+        <h1 className='text-3xl font-semibold lg:w-[500px] '>Donating Clothes to Orphanages</h1>
               <p className='font-poppins text-sm leading-loose text-gray-500 lg:w-[500px] my-5'>Lorem ipsum dolor sit amet consectetur. Lacus vitae nibh diam eu lectus sit viverra.
                 </p>
-                <div className='flex flex-row gap-8'>
+        <div className='flex flex-row gap-8 lg:w-[550px]'>
                     <Button title='Learn More'/>
                   <p className='flex gap-3 items-center font-poppins text-md text-gray-500'><AiOutlineClockCircle />5:00pm</p>
                   <p className='flex gap-3 items-center font-poppins text-md text-gray-500'><TfiLocationPin />Adenta Housing Down</p>
