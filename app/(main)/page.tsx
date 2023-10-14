@@ -4,10 +4,28 @@ import Eventcard from '@/components/eventcard'
 import Navbar from '@/components/navbar'
 import { aims, cards } from '@/utils/data'
 import Image from 'next/image'
+import { title } from 'process'
 
 
 export default function Home() {
 
+  const proof = [
+    { number:"64+",
+    title:"Donantions"
+    },
+    {
+      number: "$740+",
+      title: "Funds Raised"
+    },
+    {
+      number: "12+",
+      title: "Volunteers"
+    },
+    {
+      number: "35+",
+      title: "Projects"
+    },
+  ]
 
   return (
     <main>
@@ -120,7 +138,24 @@ export default function Home() {
         </div>
         </div>
     </section>
-    
+
+      <section className='bg-[url("/assets/proof.png")] bg-cover bg-no-repeat bg-fixed blur-none h-[200px]'>
+        <div className='lg:px-24 py-16 px-10 container bg-[url("/assets/proof.png)] bg-cover bg-no-repeat flex gap-28 justify-center'>
+  
+
+                    {
+                      proof.map((item, index)=>(
+                        <div key={index}>
+                        <h1 className='font-raleway text-6xl font-semibold text-white'>{item.number}</h1>
+                        <h1 className='font-poopins text-gray-400 font-medium text-center'>{item.title}</h1>
+                        </div>
+                      ))
+                    }
+
+                  
+        </div>
+
+    </section>
 
 
    </main>
