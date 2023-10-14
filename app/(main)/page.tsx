@@ -10,7 +10,7 @@ export default function Home() {
 
 
   return (
-    <main className=''>
+    <main>
      <section className='w-full h-auto bg-[url("/assets/map.svg")] bg-cover bg-no-repeat container'>
         <div className='text-center flex flex-col lg:text-left lg:flex-row justify-between md:px-20 font-raleway'>
       <div className='flex items-center lg:items-start flex-col gap-5 mt-20  justify-center'>
@@ -91,14 +91,31 @@ export default function Home() {
         
     </section>
 
-      <section className='  bg-[#F5F5F5]'>
+      <section className='bg-[#F5F5F5]'>
         <div className='lg:px-24 py-16 px-10 container '>
         <div className='font-raleway text-center'>
           <h1 className='text-primaryy font-semibold text-lg pt-5'>What We Do</h1>
           <h1 className='w-[250px] font-raleway m-auto text-3xl lg:text-5xl font-semibold lg:w-[600px] lg:leading-[60px]'>UpComing Events</h1>
         </div>
-        <div>
-          <Eventcard />
+
+        <div className='flex justify-between'>
+
+          <div className='flex flex-col gap-5 mt-7'>
+            <Eventcard />
+            <Eventcard />
+            
+           
+          </div>
+
+            <div className='flex flex-col justify-center w-[28%]  bg-[url("/assets/volunteer.png")] bg-cover bg-no-repeat  py-16 px-10 '>
+              <h1 className='text-5xl font-raleway font-semibold gap-4 text-primaryy backdrop-blur-sm'>Volunteer<span className='text-5xl text-white '><br></br> To Help</span></h1>
+              <p className='font-poppins text-sm leading-loose text-white  my-5'>Lorem ipsum dolor sit amet consectetur. Lacus vitae nibh diam eu lectus sit viverra.
+              </p>
+          <Button title='Volunteer Now' />
+          </div>
+
+         
+          
         </div>
         </div>
     </section>

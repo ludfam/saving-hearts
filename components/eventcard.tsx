@@ -5,7 +5,7 @@ import { TfiLocationPin } from "react-icons/tfi"
 
 const Eventcard = () => {
   return (
-    <div className='bg-white w-[70%] shadow-lg h-auto gap-5 py-5 px-7 rounded-xl flex m-0 p-0'>
+    <div className='bg-white w-[55vw] shadow-lg h-auto gap-5 py-5 px-7 rounded-xl flex m-0 p-0'>
           
         <div className='flex flex-col gap-10'>
             <h1 className='flex flex-col text-6xl text-center font-raleway font-semibold gap-4'>14<span className='text-lg text-gray-500'>December</span></h1>
