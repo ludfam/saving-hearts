@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/sheet"
 import { FiMenu } from "react-icons/fi"
 import { navlinks } from '@/utils/data'
+import Link from 'next/link'
 
 
 const MobileNav = () => {
@@ -22,7 +23,7 @@ const MobileNav = () => {
                       {
                           navlinks.map((link) => (
 
-                              <li className='hover:font-semibold cursor-pointer hover:transition duration-150 ease-in-out hover:scale-105'>{link.link}</li>
+                              <Link key={link.url} href={link.url}> <li className='hover:font-semibold cursor-pointer hover:transition duration-150 ease-in-out hover:scale-105'>{link.link}</li></Link>
                           ))
                       }
                   </ul>

@@ -1,46 +1,34 @@
+"use client"
+
 import Button from '@/components/button'
 import Card from '@/components/card'
 import Eventcard from '@/components/eventcard'
 import Navbar from '@/components/navbar'
-import { aims, cards } from '@/utils/data'
+import { aims, cards, proof } from '@/utils/data'
 import Image from 'next/image'
 import { title } from 'process'
+import { useState } from 'react'
+
+
 
 
 export default function Home() {
 
-  const proof = [
-    { number:"64+",
-    title:"Donantions"
-    },
-    {
-      number: "$740+",
-      title: "Funds Raised"
-    },
-    {
-      number: "12+",
-      title: "Volunteers"
-    },
-    {
-      number: "35+",
-      title: "Projects"
-    },
-  ]
-
+  
   return (
     <main>
-     <section className='w-full h-auto bg-[url("/assets/map.svg")] bg-cover bg-no-repeat container'>
-        <div className='text-center flex flex-col lg:text-left lg:flex-row justify-between md:px-20 font-raleway'>
+      <section className='w-full h-auto bg-[url("/assets/map.svg")] bg-cover bg-no-repeat container'>
+        <div   className='text-center flex flex-col lg:text-left lg:flex-row justify-between md:px-20 font-raleway'>
       <div className='flex items-center lg:items-start flex-col gap-5 mt-20  justify-center'>
             <h1 className='text-3xl  md:text-6xl font-bold lg:leading-[70px]'>Every life saved is a world transformed.</h1>
-            <p className='text-lg text-grey font-poppins '>"Saving one life may not change the world, but for that one person, 
-              the world changes forever."</p>
+            <p className='text-lg text-grey font-poppins '>&apos;&apos;Saving one life may not change the world, but for that one person, 
+              the world changes forever.&apos;&apos;</p>
 
               <Button title="Donate" />
       </div>
 
       <div className='flex'>
-            <img className='mt-10 lg:mt-0 xl:w-[1100px]' src='assets/hero2.png' />
+            <img className='mt-10 lg:mt-0 xl:w-[1100px]' src='assets/hero2.png' alt="" />
       </div>
     </div>
      </section>
@@ -82,13 +70,13 @@ export default function Home() {
         </div>
 
         <div className=' flex-shrink-0 w-full h-full'>
-          <img className='w-full h-full' src='assets/about.png' />
+          <img className='w-full h-full' src='assets/about.png' alt="" />
         </div>
         </div>
 
     </section>
 
-      <section className='container px-10 lg:px-24'>
+      <section className='container px-10 lg:px-24 py-8'>
         
         <div className='font-raleway text-center'>
           <h1 className='text-primaryy font-semibold text-lg pt-5'>What We Do</h1>
@@ -139,7 +127,7 @@ export default function Home() {
         </div>
     </section>
 
-      <section className='bg-[url("/assets/proof.png")] bg-cover bg-no-repeat bg-fixed blur-none lg:h-[200px]'>
+      <section className='bg-[url("/assets/proof.png")] bg-cover bg-no-repeat bg-fixed lg:h-[200px]'>
         <div className='lg:px-24 py-16 px-10 container bg-[url("/assets/proof.png)] bg-cover bg-no-repeat flex flex-col gap-10 lg:flex-row lg:gap-28 justify-center'>
   
 
@@ -156,7 +144,9 @@ export default function Home() {
         </div>
 
     </section>
+    
 
+      
     
 
 

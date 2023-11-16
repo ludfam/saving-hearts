@@ -6,15 +6,20 @@ import { IoBookSharp } from "react-icons/io5"
 export  const navlinks = [
   {
     link: "HOME",
+    url:"/"
+  
   },
   {
     link: "ABOUT US",
+    url: "/about"
   },
   {
     link: "NEWS & EVENTS",
+    url: "/"
   },
   {
     link: "CONTACT US",
+    url: "/"
   },
 ];
 
@@ -60,3 +65,22 @@ export const cards = [
     text: "Lorem ipsum dolor sit amet consectetur. Lacus vitae nibh diam eu lectus sit viverra. Consectetur praesent morbi lobortis dolor lacus nascetur aliquam. Eget sodales ipsum ullamcorper amet",
   },
 ] 
+
+export const proof = [
+  {
+    number: "64+",
+    title: "Donantions"
+  },
+  {
+    number: "$740+",
+    title: "Funds Raised"
+  },
+  {
+    number: "12+",
+    title: "Volunteers"
+  },
+  {
+    number: "35+",
+    title: "Projects"
+  },
+]
