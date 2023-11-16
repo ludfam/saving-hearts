@@ -54,7 +54,7 @@ const Footer = () => {
                   </div>
 
               </div>
-              <div className='px-10 h-auto lg:h-[20vh] gap-5 bg-grey flex flex-col lg:flex-row justify-between lg:px-36 items-center'>
+              <div className='py-5 px-10 h-auto lg:h-[20vh] gap-5 bg-grey flex flex-col lg:flex-row justify-between lg:px-36 items-center'>
 
                   <div className='flex flex-col gap-2'>
                       <h1 className='text-2xl text-white font-semibold text-center lg:text-left '>Subscribe to our newletter</h1>
@@ -64,8 +64,9 @@ const Footer = () => {
                               type='email'
                               placeholder='example@gmail.com'
                               onChange={handleEmailChange} />
-                          <Button title='Submit' />
                           {!isValidEmail && <p className="text-red-600">Please enter a valid email address.</p>}
+                          <Button title='Submit' />
+                          
                       </div>
 
                   </div>

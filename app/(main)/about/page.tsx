@@ -15,10 +15,10 @@ const Page = () => {
               
         </section>
 
-          <section className='px-10 py-5 container-custom flex flex-col lg:flex-row lg:gap-10'>
+      <section className='px-10 py-5 max-w-6xl mx-auto flex flex-col lg:flex-row lg:gap-10'>
            
               <div className=''>
-                <img src='/assets/about1&2.png' alt="" />
+                <img  src='/assets/about1&2.png' alt="" />
 
               </div>
               <div >
@@ -39,11 +39,11 @@ const Page = () => {
               </div>
         </section>
 
-          <section className='px-10 py-5 lg:container-custom h-auto bg-[#F8C181]'>
+      <section className='px-10 py-5  h-auto bg-[#F8C181]'>
               <h1 className='text-center text-white font-raleway text-3xl lg:text-5xl font-semibold lg:leading-[60px]'>Partners</h1>
         </section>
 
-          <section className='px-10 py-5 lg:container-custom flex flex-col lg:flex-row gap-10 lg:gap-0 lg:justify-around'>
+      <section className='px-10 py-5 max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 lg:justify-around'>
               <div className='m-auto w-[300px] h-auto  lg:w-[450px] lg:h-[467px]  rounded-3xl shadow-2xl border-2 border-primaryy py-16 px-9 flex flex-col gap-6'>
                   <h1 className=' text-center font-raleway text-3xl lg:text-5xl font-semibold lg:leading-[60px]'>Our<span className='text-primaryy'> Mission</span></h1>
                   <p className='text-center font-poppins text-sm leading-loose text-gray-500 my-5'>Lorem ipsum dolor sit amet consectetur. Lacus vitae nibh diam eu lectus sit viverra. Consectetur praesent morbi lobortis dolor
