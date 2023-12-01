@@ -15,7 +15,7 @@ export  const navlinks = [
   },
   {
     link: "NEWS & EVENTS",
-    url: "/"
+    url: "/news"
   },
   {
     link: "CONTACT US",

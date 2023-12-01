@@ -18,7 +18,7 @@ const News = () => {
 
       </section>
 
-      <section className='px-10 py-5 max-w-6xl mx-auto'>
+      {/* <section className='px-10 py-5 max-w-6xl mx-auto'>
 
       <Tabs defaultValue="account" className=" mx-auto ">
         <TabsList className=''>
@@ -29,7 +29,7 @@ const News = () => {
         <TabsContent value="events">Change your password here.</TabsContent>
       </Tabs>
 
-      </section>
+      </section> */}
     </div>
   )
 }

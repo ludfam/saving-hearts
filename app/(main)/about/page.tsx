@@ -19,7 +19,7 @@ const Page = () => {
            
               <div className=''>
                 <img  src='/assets/about1&2.png' alt="" />
-
+      
               </div>
               <div >
                   <div className='py-5 lg:py-0 font-raleway text-center lg:text-right'>
